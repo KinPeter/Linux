@@ -18,6 +18,7 @@ function git-co {
 }
 
 function git-review {
+  git fetch
   local branch=$(git branch -a | grep -m 1 $1)
   if [[ ${#branch} == 0 ]]; then
     echo -e "\e[31m[-] No such branch\n\e[39m"
