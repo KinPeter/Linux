@@ -18,6 +18,7 @@ function git-co {
 }
 
 function git-review {
+  echo -e "\e[31m[-] Fetching from origin...\n\e[39m"
   git fetch
   local branch=$(git branch -a | grep -m 1 $1)
   if [[ ${#branch} == 0 ]]; then
