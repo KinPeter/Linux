@@ -18,7 +18,7 @@ function git-co {
 }
 
 function git-review {
-  echo -e "\e[31m[-] Fetching from origin...\n\e[39m"
+  echo -e "\n\e[32m[+] Fetching from origin...\n\e[39m"
   git fetch
   local branch=$(git branch -a | grep -m 1 $1)
   if [[ ${#branch} == 0 ]]; then
@@ -26,7 +26,7 @@ function git-review {
   fi
   if [[ $branch == *"remotes/origin"* ]]; then
     local cutName=${branch:10}
-    echo -e "\e[32m[+] Changing to remote branch: $cutName...\n\e[39m"
+    echo -e "\n\e[32m[+] Changing to remote branch: $cutName...\n\e[39m"
     git checkout $cutName
   else
     echo -e "\e[31m[-] Branch is checked out locally\n\e[39m"
@@ -36,7 +36,15 @@ function git-review {
 
 function git-pulo {
   local branch=$(git rev-parse --abbrev-ref HEAD)
-  echo -e "\e[32m[+] Pulling $branch from origin...\n\e[39m"
+  echo -e "\n\e[32m[+] Pulling $branch from origin...\n\e[39m"
   git pull origin $branch
   return 0
+}
+
+function mcda-review {
+  git-review $1
+  echo -e "\n\e[32m[+] Running automated tests...\n\e[39m"
+  npm run test
+  echo -e "\n\e[32m[+] Running linters...\n\e[39m"
+  npm run lint
 }
