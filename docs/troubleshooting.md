@@ -8,7 +8,7 @@ sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 
 ## Infinite login loop issue \(nvidia driver\)
 
-{% embed url="http://ubuntuhandbook.org/index.php/2020/01/login-loop-auto-login-enabled-in-ubuntu-19-10-with-nvidia-driver/" %}
+[Look for the solution here](http://ubuntuhandbook.org/index.php/2020/01/login-loop-auto-login-enabled-in-ubuntu-19-10-with-nvidia-driver/)
 
 ## Increase file watchers limitation 
 
@@ -25,4 +25,3 @@ sudo sysctl -p --system
 ```
 
 And don't forget to restart your IDE. 
-

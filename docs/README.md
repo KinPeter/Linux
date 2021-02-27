@@ -1,6 +1,3 @@
----
-description: 'Guides, snippets, tips, tricks, troubleshooting'
----
-
 # Docs
 
+Guides, snippets, tips, tricks, troubleshooting
