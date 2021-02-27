@@ -1,4 +1,4 @@
-# Initial page
+# Readme
 
 To import functions to be used in shell, add these lines to the `~/.bashrc` file:
 
