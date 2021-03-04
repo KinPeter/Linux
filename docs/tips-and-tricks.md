@@ -1,15 +1,17 @@
 # Tips & Tricks
 
-## Start Chromium with specific profile
+## Start Chrome / Chromium with specific profile
 
-This works in case of SNAP installation. 
-
-* Check profile folders under `~/snap/chromium/common/chromium` , they will be called "Default", "Profile 1", "Profile 2" etc.
+* Look for the profile folders, they will be called "Default", "Profile 1", "Profile 2" etc.
+  * Chromium (SNAP): `~/snap/chromium/common/chromium`
+  * Google Chrome: `~/.config/google-chrome/`
 * In each folder there is a `Preferences` file where in the first few lines you can see the username and email associated with that profile
 * Use the name of the folder to start chromium:
 
 ```bash
 chromium --profile-directory="Profile 1"
+# or
+google-chrome --profile-directory="Profile 1"
 ```
 
 ## Create desktop entries
@@ -29,6 +31,16 @@ Terminal=false
 
 * Put the icons for example to `~/.local/share/icons/`
 * Dont forget to make them executable!
+
+## Edit an existing (system generated) desktop entry
+
+```bash
+# list all desktop files
+ls /usr/share/applications/*.desktop
+# copy the default desktop entry to your home folder
+cp /usr/share/applications/something.desktop ~/.local/share/applications
+# finally edit this file
+```
 
 ## Set workspace switch keys to the same as in Windows \(Win+Ctrl+Arrows\)
 
