@@ -76,3 +76,11 @@ sudo apt-get install network-manager-l2tp network-manager-l2tp-gnome
 This will add the L2TP option to the default VPN settings. 
 
 To add pre-shared key, go to the IPsec settings. 
+
+## Change the default terminal emulator
+
+```bash
+sudo update-alternatives --config x-terminal-emulator
+```
+Select the desired terminal from the list of alternatives.
+
