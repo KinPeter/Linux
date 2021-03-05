@@ -20,3 +20,9 @@ gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
 # Change to global dark mode (20.04)
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 # default light is 'Yaru'
+
+# Enable activities hot corner overview
+gsettings set org.gnome.desktop.interface enable-hot-corners true
+
+# Center new windows
+gsettings set org.gnome.mutter center-new-windows true
