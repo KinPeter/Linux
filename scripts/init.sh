@@ -26,3 +26,12 @@ gsettings set org.gnome.desktop.interface enable-hot-corners true
 
 # Center new windows
 gsettings set org.gnome.mutter center-new-windows true
+
+# Set custom keybinding for Suspend (Win+Numpad-)
+# If you're not sure this is the first set binding, make sure by checking the list:
+# gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings
+# This should result in an empty array. If not, simply change the next script by adding '.../customX' (X = n+1) to the list and change all following lines to X
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Suspend'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'systemctl suspend'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>KP_Subtract'
