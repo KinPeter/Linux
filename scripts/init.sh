@@ -1,37 +1,20 @@
-# Customize the Dock panel
-# https://linuxconfig.org/how-to-customize-dock-panel-on-ubuntu-20-04-focal-fossa-linux
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
-gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
-gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0
+#!/bin/bash
 
-# Set workspace switch keys to the same as in Windows (Win+Ctrl+Arrows)
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Page_Up', '<Control><Super>Left']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Up', '<Control><Super>Right']"
+# Install apps
+source ./install.sh
+echo -e "\n[+] Installs done\n"
 
-# Set Win+Tab to open applications view
-gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab']"
+# Add custom settings
+source ./gsettings.sh
+echo -e "\n[+] Settings added\n"
 
-# Hide home and trash shortcut from desktop
-gsettings set org.gnome.shell.extensions.desktop-icons show-home false
-gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+# Copy git and pit config
+cp ./config/.gitconfig $HOME
+cp ./config/.pitconfig $HOME
+echo -e "\n[+] Git and Pit config added\n"
 
-# Change to global dark mode (20.04)
-gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-# default light is 'Yaru'
-
-# Enable activities hot corner overview
-gsettings set org.gnome.desktop.interface enable-hot-corners true
-
-# Center new windows
-gsettings set org.gnome.mutter center-new-windows true
-
-# Set custom keybinding for Suspend (Win+Numpad-)
-# If you're not sure this is the first set binding, make sure by checking the list:
-# gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings
-# This should result in an empty array. If not, simply change the next script by adding '.../customX' (X = n+1) to the list and change all following lines to X
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Suspend'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'systemctl suspend'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>KP_Subtract'
+# Source custom bash scripts
+echo "source $(pwd)/bash-aliases.sh" >> $HOME/.bashrc
+echo "source $(pwd)/bash-git.sh" >> $HOME/.bashrc
+echo "source $(pwd)/bash-others.sh" >> $HOME/.bashrc
+echo -e "\n[+] Custom scripts sourced\n"

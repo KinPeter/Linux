@@ -1,0 +1,31 @@
+[user]
+	email = kinpeter85@gmail.com
+	name = Peter Kin
+[core]
+	editor = nano
+[alias]
+ 	alias = config --get-regexp alias
+	localuser = config user.email
+	globaluser = config --global user.email
+ 	pretty = log --oneline --graph --all
+	ll = log -1
+	st = status
+	poh = push origin HEAD
+    pohfwl = push origin HEAD --force-with-lease
+    cm = commit -m
+    cnv = commit --no-verify
+	co = checkout
+	cob = checkout -b
+	cod = checkout develop
+	com = checkout master
+	ac = !git add . && git commit -m
+	acnv = !git add . && git commit --no-verify -m
+	f = fetch
+	fp = fetch --prune
+	pulod = pull origin develop
+	pulom = pull origin master
+	pulo = "!f() { git pull origin $(git rev-parse --abbrev-ref HEAD); }; f"
+	fuckit = !git reset --hard HEAD && git clean -df
+	us = reset HEAD
+	discard = checkout -- 
+	
