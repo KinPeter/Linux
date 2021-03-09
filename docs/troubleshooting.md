@@ -1,5 +1,15 @@
 # Troubleshooting
 
+## Korean (hangul) input source
+
+- Go to Settings -> Region and Language. Look for input source `Korean (Hangul)`.
+- If there is no such thing, go to "Manage Installed Languages" and install Korean language pack.
+- Make sure here that the keyboard input method system is set to `IBus`.
+- In terminal, make sure the `ibus-hangul` package is installed (`sudo apt install ibus-hangul`)
+- After a restart, now it should be possible to find the `Korean (Hangul)` among the input sources.
+- If still not, in terminal list the available ibus engines `ibus list-engine`, and/or try to set it to hangul with `ibus engine hangul`.
+
+
 ## If SNAP apps don’t start: 
 
 ```bash
