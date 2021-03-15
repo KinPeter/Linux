@@ -37,3 +37,11 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Suspend'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'systemctl suspend'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>KP_Subtract'
+
+# Nautilus default settings
+gsettings set org.gnome.nautilus.preferences default-folder-viewer "list-view"
+gsettings set org.gnome.nautilus.preferences default-sort-order "name"
+gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+gsettings set org.gnome.nautilus.list-view use-tree-view true
+gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'permissions', 'date_modified']"
+gsettings set org.gnome.nautilus.list-view default-zoom-level "standard"
