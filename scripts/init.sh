@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Install apps
-source ./install.sh
-echo -e "\n[+] Installs done\n"
+# Install APT apps
+source ./apt-install.sh
 
 # Add custom settings
 source ./gsettings.sh
@@ -18,3 +17,6 @@ echo "source $(pwd)/bash-aliases.sh" >> $HOME/.bashrc
 echo "source $(pwd)/bash-git.sh" >> $HOME/.bashrc
 echo "source $(pwd)/bash-others.sh" >> $HOME/.bashrc
 echo -e "\n[+] Custom scripts sourced\n"
+
+# Install SNAP apps
+source ./snap-install.sh

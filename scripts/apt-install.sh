@@ -22,26 +22,14 @@ sudo apt install \
 echo -e "\n[+] APT packages installed\n"
 
 # Add config for Terminator
+mkdir $HOME/.config/terminator
+touch $HOME/.config/terminator/config
 cat ./config/terminator.config > $HOME/.config/terminator/config
 
 # Add config for Indicator Multiload
 dconf load /de/mh21/indicator-multiload/ < ./config/indicator-multiload.config
 
 echo -e "\n[+] Config files added\n"
-
-
-# Install SNAPS
-sudo snap install \
-  dbeaver-ce \
-  krita \
-  inkscape \
-  insomnia
-
-sudo snap install code --classic
-sudo snap install slack --classic
-sudo snap install dotnet-sdk --channel=lts/stable --classic
-
-echo -e "\n[+] Snaps installed\n"
 
 # Install NVM
 # https://github.com/nvm-sh/nvm#installing-and-updating
@@ -51,5 +39,4 @@ echo -e "\n[+] NVM installed\n"
 # Configure docker user group
 sudo groupadd docker
 sudo gpasswd -a $USER docker
-newgrp docker
 echo -e "\n[+] Docker user group configured\n"
