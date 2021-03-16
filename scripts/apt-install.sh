@@ -10,14 +10,15 @@ sudo apt install \
   docker-compose \
   network-manager-l2tp \
   network-manager-l2tp-gnome \
-  openjdk-11-jdk \
   openssh-server \
   dconf-editor \
   gnome-tweak-tool \
   gnome-shell-extensions \
+  net-tools \
   vlc \
   indicator-multiload \
-  terminator 
+  terminator \
+  openjdk-11-jdk
 
 echo -e "\n[+] APT packages installed\n"
 

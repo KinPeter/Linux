@@ -19,9 +19,10 @@ gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab'
 gsettings set org.gnome.shell.extensions.desktop-icons show-home false
 gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
 
-# Change to global dark mode (20.04)
-gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-# default light is 'Yaru'
+# Change to global dark mode (20.04) - default light is 'Yaru'
+gsettings set org.gnome.desktop.interface gtk-theme "Yaru-dark"
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gsettings set org.gnome.shell.extensions.user-theme name "Yaru-dark"
 
 # Enable activities hot corner overview
 gsettings set org.gnome.desktop.interface enable-hot-corners true
