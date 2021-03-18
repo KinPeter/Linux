@@ -19,10 +19,10 @@ echo "source $(pwd)/bash-others.sh" >> $HOME/.bashrc
 echo -e "\n[+] Custom scripts sourced\n"
 
 # Generate new SSH key
-ssh-keygen -q -f $HOME/.ssh/id_rsa -N ""
-echo -e "\n[+] New SSH key generated:\n"
-cat $HOME/.ssh/id_rsa.pub
-echo -e "\n--------\n"
+# ssh-keygen -q -f $HOME/.ssh/id_rsa -N ""
+# echo -e "\n[+] New SSH key generated:\n"
+# cat $HOME/.ssh/id_rsa.pub
+# echo -e "\n--------\n"
 
 # Add bookmarks to Nautilus
 echo "sftp://peter@192.168.0.100/home/peter KP-NUC" >> $HOME/.config/gtk-3.0/bookmarks
