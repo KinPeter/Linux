@@ -10,7 +10,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0
 
 # Set workspace switch keys to the same as in Windows (Win+Ctrl+Arrows)
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Page_Up', '<Control><Super>Left']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Up', '<Control><Super>Right']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Down', '<Control><Super>Right']"
 
 # Set Win+Tab to open applications view
 gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab']"

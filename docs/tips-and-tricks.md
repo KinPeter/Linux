@@ -46,7 +46,7 @@ cp /usr/share/applications/something.desktop ~/.local/share/applications
 
 ```bash
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Page_Up', '<Control><Super>Left']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Up', '<Control><Super>Right']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Down', '<Control><Super>Right']"
 ```
 
 ## Change Alt+Tab and Super+Tab bindings
