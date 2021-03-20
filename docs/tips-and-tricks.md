@@ -84,3 +84,38 @@ sudo update-alternatives --config x-terminal-emulator
 ```
 Select the desired terminal from the list of alternatives.
 
+## Laptop - use 3 and 4 finger gestures on touchpad
+
+Install Touchegg according to its [instructions on GitHub](https://github.com/JoseExposito/touchegg).
+
+Don't forget the [shell extension](https://extensions.gnome.org/extension/4033/x11-gestures/).
+
+After first running with `touchegg`, it will create a default config file in `~/.config/touchegg/touchegg.conf`. Replace the defaults with this:
+```xml
+<application name="All">
+  <!-- Change to one workspace down -->
+  <gesture type="SWIPE" fingers="3" direction="RIGHT">
+    <action type="CHANGE_DESKTOP">
+      <direction>previous</direction>
+      <animate>true</animate>
+      <animationPosition>auto</animationPosition>
+    </action>
+  </gesture>
+  <!-- Change to one workspace up -->
+  <gesture type="SWIPE" fingers="3" direction="LEFT">
+    <action type="CHANGE_DESKTOP">
+      <direction>next</direction>
+      <animate>true</animate>
+      <animationPosition>auto</animationPosition>
+    </action>
+  </gesture>
+  <!-- Show application overview -->
+  <gesture type="SWIPE" fingers="3" direction="UP">
+    <action type="SEND_KEYS">
+      <keys>Super_L</keys>
+      <on>begin</on>
+    </action>
+  </gesture>
+</application>
+```
+After a reboot, it will start up automatically.
