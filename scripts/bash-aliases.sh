@@ -8,3 +8,6 @@ alias docker-rma='docker rm $(docker ps -a -q) && docker rmi $(docker images -a 
 
 # run pit-cli using dotnet (check and update path after build!)
 alias pit='dotnet ~/code/pit-cli/bin/Debug/netcoreapp3.1/pit.dll'
+
+# run a static http server on port 8000 serving from the active directory
+alias pyserve='python3 -m http.server 8000' 
