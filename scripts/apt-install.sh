@@ -27,6 +27,9 @@ mkdir $HOME/.config/terminator
 touch $HOME/.config/terminator/config
 cat ./config/terminator.config > $HOME/.config/terminator/config
 
+# Add config for Gnome Terminal
+dconf load /org/gnome/terminal/legacy/profiles:/ < ./config/gnome-terminal-profiles.dconf
+
 # Add config for Indicator Multiload
 dconf load /de/mh21/indicator-multiload/ < ./config/indicator-multiload.config
 

@@ -15,14 +15,15 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Supe
 # Set Win+Tab to open applications view
 gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab']"
 
-# Hide home and trash shortcut from desktop
-gsettings set org.gnome.shell.extensions.desktop-icons show-home false
-gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+# Hide home and trash shortcut from desktop - not working on 21.04
+# gsettings set org.gnome.shell.extensions.desktop-icons show-home false
+# gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
 
 # Change to global dark mode (20.04) - default light is 'Yaru'
-gsettings set org.gnome.desktop.interface gtk-theme "Yaru-dark"
-gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-gsettings set org.gnome.shell.extensions.user-theme name "Yaru-dark"
+# in 21.04 just change in settings, it's global by default
+# gsettings set org.gnome.desktop.interface gtk-theme "Yaru-dark"
+# gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+# gsettings set org.gnome.shell.extensions.user-theme name "Yaru-dark"
 
 # Enable activities hot corner overview
 gsettings set org.gnome.desktop.interface enable-hot-corners true
