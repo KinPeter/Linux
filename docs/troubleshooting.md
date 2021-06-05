@@ -9,12 +9,13 @@
 - After a restart, now it should be possible to find the `Korean (Hangul)` among the input sources.
 - If still not, in terminal list the available ibus engines `ibus list-engine`, and/or try to set it to hangul with `ibus engine hangul`.
 
+## WebStorm/IDEA `[node | npm] not found` when running script
 
-## If SNAP apps don’t start: 
-
-```bash
-sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-```
+This is because by default NVM puts its "magic" to the `~/.bashrc` file which adds the `node` and `npm` commands to the PATH. This only loads when you start a "normal" terminal window. IDEs however start a login shell, which reads configuration from the `~/.profile` file. So the solution:
+- Copy the lines added by NVM from `.bashrc` to `.profile`
+- Save your files and close your IDE
+- Log out / log in to Linux to apply the changes and load NVM stuff with the shell
+- Restart your IDE and try again
 
 ## Infinite login loop issue \(nvidia driver\)
 
@@ -35,3 +36,9 @@ sudo sysctl -p --system
 ```
 
 And don't forget to restart your IDE. 
+
+## If SNAP apps don’t start: 
+
+```bash
+sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
+```
