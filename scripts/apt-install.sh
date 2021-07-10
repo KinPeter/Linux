@@ -17,15 +17,16 @@ sudo apt install \
   net-tools \
   vlc \
   indicator-multiload \
-  terminator \
+  build-essential \
   openjdk-11-jdk
+  # terminator \
 
 echo -e "\n[+] APT packages installed\n"
 
 # Add config for Terminator
-mkdir $HOME/.config/terminator
-touch $HOME/.config/terminator/config
-cat ./config/terminator.config > $HOME/.config/terminator/config
+# mkdir $HOME/.config/terminator
+# touch $HOME/.config/terminator/config
+# cat ./config/terminator.config > $HOME/.config/terminator/config
 
 # Add config for Gnome Terminal
 dconf load /org/gnome/terminal/legacy/profiles:/ < ./config/gnome-terminal-profiles.dconf
