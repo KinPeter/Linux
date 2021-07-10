@@ -18,7 +18,8 @@ sudo apt install \
   vlc \
   indicator-multiload \
   build-essential \
-  openjdk-11-jdk
+  openjdk-11-jdk \
+  piper
   # terminator \
 
 echo -e "\n[+] APT packages installed\n"
