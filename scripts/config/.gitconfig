@@ -3,6 +3,8 @@
 	name = Peter Kin
 [core]
 	editor = nano
+[pull]
+  rebase = false
 [alias]
 	alias = config --get-regexp alias
 	localuser = config user.email

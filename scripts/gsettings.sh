@@ -15,9 +15,9 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Supe
 # Set Win+Tab to open applications view
 gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab']"
 
-# Hide home and trash shortcut from desktop - not working on 21.04
-# gsettings set org.gnome.shell.extensions.desktop-icons show-home false
-# gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
+# Hide home and trash shortcut from desktop
+gsettings set org.gnome.shell.extensions.ding show-trash false
+gsettings set org.gnome.shell.extensions.ding show-home false
 
 # Change to global dark mode (20.04) - default light is 'Yaru'
 # in 21.04 just change in settings, it's global by default

@@ -8,7 +8,7 @@ sudo snap install \
   insomnia
 
 sudo snap install code --classic
-sudo snap install slack --classic
 sudo snap install dotnet-sdk --channel=lts/stable --classic
+# sudo snap install slack --classic // download slack from slack.com for Hangul support
 
 echo -e "\n[+] Snaps installed\n"

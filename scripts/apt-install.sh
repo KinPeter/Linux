@@ -3,6 +3,7 @@ sudo apt update
 
 # Install APT packages
 sudo apt install \
+  git \
   curl \
   flameshot \
   peek \
