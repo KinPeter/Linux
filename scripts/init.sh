@@ -9,7 +9,7 @@ echo -e "\n[+] Settings added\n"
 
 # Copy git and pit config
 cp ./config/.gitconfig $HOME
-cp ./config/.pitconfig $HOME
+cp ./config/.pitconfig.json $HOME
 echo -e "\n[+] Git and Pit config added\n"
 
 # Source custom bash scripts

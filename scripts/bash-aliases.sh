@@ -3,11 +3,8 @@
 # docker to “remove all” images and containers
 alias docker-rma='docker rm $(docker ps -a -q) && docker rmi $(docker images -a -q)'
 
-# example alias for a nodejs script that needs to get the current folder path as "-p" parameter
-# alias node-script='node ~/path/to/index.js -p $(pwd)'
-
-# run pit-cli using dotnet (check and update path after build!)
-alias pit='dotnet ~/code/pit-cli/bin/Debug/netcoreapp3.1/pit.dll'
+# run pit-cli using node.js (make sure the path is correct and the app is built)
+alias pit='node ~/code/pit-cli/dist/index.js'
 
 # run a static http server on port 8000 serving from the active directory
 alias pyserve='python3 -m http.server 8000' 

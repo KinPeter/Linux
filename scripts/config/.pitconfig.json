@@ -1,0 +1,59 @@
+{
+  "gitUser": {
+    "personalEmail": "kinpeter85@gmail.com",
+    "workEmail": "peter.kin@moon42.com"
+  },
+  "jiraProjects": {
+    "mcda": {
+      "prefix": "MCDA",
+      "url": "https://mcda-moon42.atlassian.net",
+      "user": "peter.kin@moon42.com",
+      "apiToken": "API_TOKEN",
+      "folders": [
+        "mcda-web-main",
+        "mcda-web-admin",
+        "mcda-backend",
+        "mcda-documentation"
+      ]
+    },
+    "farm": {
+      "prefix": "FARM",
+      "url": "https://moon42.atlassian.net",
+      "user": "peter.kin@moon42.com",
+      "apiToken": "API_TOKEN",
+      "folders": [
+        "farm42-backend",
+        "farm42-frontend",
+        "farm42-docker"
+      ]
+    },
+    "olive": {
+      "prefix": "OLIVE",
+      "url": "https://moon42.atlassian.net",
+      "user": "peter.kin@moon42.com",
+      "apiToken": "API_TOKEN",
+      "folders": [
+        "olive-web"
+      ]
+    },
+    "terralab": {
+      "prefix": "TL",
+      "url": "https://moon42.atlassian.net",
+      "user": "peter.kin@moon42.com",
+      "apiToken": "API_TOKEN",
+      "folders": [
+        "terralab-web",
+        "terralab-backend"
+      ]
+    },
+    "dokucoach": {
+      "prefix": "DC",
+      "url": "https://elbstack.atlassian.net",
+      "user": "peter.kin@moon42.com",
+      "apiToken": "API_TOKEN",
+      "folders": [
+        "dokucoach-mono"
+      ]
+    }
+  }
+}
