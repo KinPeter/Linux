@@ -20,7 +20,8 @@ sudo apt install \
   indicator-multiload \
   build-essential \
   openjdk-11-jdk \
-  piper
+  piper \
+  bat
   # terminator \
 
 echo -e "\n[+] APT packages installed\n"

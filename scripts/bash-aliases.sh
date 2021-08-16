@@ -8,3 +8,6 @@ alias pit='node ~/code/pit-cli/dist/index.js'
 
 # run a static http server on port 8000 serving from the active directory
 alias pyserve='python3 -m http.server 8000' 
+
+# replace default cat with bat(cat) for fancy display
+alias cat='batcat --pager=never'
