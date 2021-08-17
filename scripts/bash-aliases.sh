@@ -11,3 +11,7 @@ alias pyserve='python3 -m http.server 8000'
 
 # replace default cat with bat(cat) for fancy display
 alias cat='batcat --pager=never'
+
+# list and remove node_modules folders recursively
+alias list-node-modules="find . -name 'node_modules' -type d -prune"
+alias remove-node-modules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
