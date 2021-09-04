@@ -26,8 +26,10 @@
 	com = checkout master
 	ac = !git add . && git commit -m
 	aac = !git add . && git commit --amend -m
+	aacl = "!f() { git aac \"$(git log -1 --pretty=%B)\"; }; f"
 	acnv = !git add . && git commit --no-verify -m
 	aacnv = !git add . && git commit --amend --no-verify -m
+	aacnvl = "!f() { git aacnv \"$(git log -1 --pretty=%B)\"; }; f"
 	f = fetch
 	fp = fetch --prune
 	pulod = pull origin develop
