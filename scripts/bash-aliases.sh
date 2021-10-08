@@ -20,3 +20,9 @@ alias remove-node-modules="find . -name 'node_modules' -type d -prune -exec rm -
 
 # grep from history
 alias hgrep="history | grep"
+
+# NordVPN
+alias nvpnusa="nordvpn c United_States"
+alias nvpnhun="nordvpn c Hungary"
+alias nvpnd="nordvpn d"
+alias nvpnst="nordvpn status"
