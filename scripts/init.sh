@@ -12,6 +12,10 @@ cp ./config/.gitconfig $HOME
 cp ./config/.pitconfig.json $HOME
 echo -e "\n[+] Git and Pit config added\n"
 
+# Copy Touchegg config
+cp ./config/touchegg.conf $HOME/.config/touchegg/touchegg.conf
+echo -e "\n[+] Touchegg config added\n"
+
 # Source custom bash scripts
 echo "source $(pwd)/bash-aliases.sh" >> $HOME/.bashrc
 echo "source $(pwd)/bash-git.sh" >> $HOME/.bashrc
