@@ -1,32 +1,36 @@
 #!/bin/bash
 
 # Customize the Dock panel
-# https://linuxconfig.org/how-to-customize-dock-panel-on-ubuntu-20-04-focal-fossa-linux
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
-gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
-gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 36
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide true
+gsettings set org.gnome.shell.extensions.dash-to-dock manualhide false
+
+# Hide workspaces button
+gsettings set org.gnome.shell.extensions.pop-cosmic show-workspaces-button false
+
+# Show the workspace picker on the right side
+gsettings set org.gnome.shell.extensions.pop-cosmic workspace-picker-left false
+
+# Enable activities hot corner overview
+gsettings set org.gnome.desktop.interface enable-hot-corners true
+
+# Get back the maximize button in title bar
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
 
 # Set workspace switch keys to the same as in Windows (Win+Ctrl+Arrows)
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Page_Up', '<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Down', '<Control><Super>Right']"
+# + remove the above bindings from where they were
+gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Primary><Super>KP_Left', '<Primary><Super>h']"
+gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Primary><Super>KP_Right', '<Primary><Super>l']"
 
-# Set Win+Tab to open applications view
-gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab']"
-
-# Hide home and trash shortcut from desktop
-gsettings set org.gnome.shell.extensions.ding show-trash false
-gsettings set org.gnome.shell.extensions.ding show-home false
-
-# Change to global dark mode (20.04) - default light is 'Yaru'
-# in 21.04 just change in settings, it's global by default
-# gsettings set org.gnome.desktop.interface gtk-theme "Yaru-dark"
-# gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-# gsettings set org.gnome.shell.extensions.user-theme name "Yaru-dark"
-
-# Enable activities hot corner overview
-gsettings set org.gnome.desktop.interface enable-hot-corners true
+# Originals for workspace switch:
+# $ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-up
+# ['<Primary><Super>Up', '<Primary><Super>KP_Up', '<Primary><Super>k']
+# $ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-down
+# ['<Primary><Super>Down', '<Primary><Super>KP_Down', '<Primary><Super>j']
 
 # Center new windows
 gsettings set org.gnome.mutter center-new-windows true

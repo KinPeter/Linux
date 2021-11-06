@@ -31,4 +31,7 @@ echo "sftp://peter@192.168.0.112/home/peter KP-BRIX" >> $HOME/.config/gtk-3.0/bo
 echo "sftp://pkincom@p-kin.com/home/pkincom P-Kin.com" >> $HOME/.config/gtk-3.0/bookmarks
 
 # Install SNAP apps
-source ./snap-install.sh
+# source ./snap-install.sh
+
+# Install Flatpak apps
+source ./flatpak-install.sh

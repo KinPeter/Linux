@@ -3,8 +3,6 @@ sudo apt update
 
 # Install APT packages
 sudo apt install \
-  git \
-  curl \
   flameshot \
   peek \
   docker.io \
@@ -13,16 +11,18 @@ sudo apt install \
   network-manager-l2tp-gnome \
   openssh-server \
   dconf-editor \
-  gnome-tweak-tool \
+  gnome-tweaks \
   gnome-shell-extensions \
   net-tools \
   vlc \
-  indicator-multiload \
   build-essential \
   openjdk-11-jdk \
   piper \
   bat
+  # indicator-multiload \
   # terminator \
+  # git \
+  # curl \
 
 echo -e "\n[+] APT packages installed\n"
 
@@ -32,19 +32,24 @@ echo -e "\n[+] APT packages installed\n"
 # cat ./config/terminator.config > $HOME/.config/terminator/config
 
 # Add config for Gnome Terminal
-dconf load /org/gnome/terminal/legacy/profiles:/ < ./config/gnome-terminal-profiles.dconf
+# dconf load /org/gnome/terminal/legacy/profiles:/ < ./config/gnome-terminal-profiles.dconf
 
 # Add config for Indicator Multiload
-dconf load /de/mh21/indicator-multiload/ < ./config/indicator-multiload.config
+# dconf load /de/mh21/indicator-multiload/ < ./config/indicator-multiload.config
 
-echo -e "\n[+] Config files added\n"
+# echo -e "\n[+] Config files added\n"
 
 # Install NVM
 # https://github.com/nvm-sh/nvm#installing-and-updating
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-echo -e "\n[+] NVM installed\n"
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+# echo -e "\n[+] NVM installed\n"
 
 # Configure docker user group
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 echo -e "\n[+] Docker user group configured\n"
+
+# Add PoP!_OS Wallpapers
+sudo apt-add-repository -ys ppa:system76-dev/stable
+sudo apt update
+sudo apt install -y system76-wallpapers
