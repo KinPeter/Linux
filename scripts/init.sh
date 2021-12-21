@@ -32,7 +32,7 @@ echo -e "\n[+] Custom scripts sourced\n"
 echo "sftp://peter@192.168.0.100/home/peter KP-NUC" >> $HOME/.config/gtk-3.0/bookmarks
 echo "sftp://peter@192.168.0.109/home/peter KP-ZENBOOK" >> $HOME/.config/gtk-3.0/bookmarks
 echo "sftp://peter@192.168.0.112/home/peter KP-BRIX" >> $HOME/.config/gtk-3.0/bookmarks
-echo "sftp://pkincom@p-kin.com/home/pkincom P-Kin.com" >> $HOME/.config/gtk-3.0/bookmarks
+echo "ftp://pkincom@p-kin.com P-Kin.com" >> $HOME/.config/gtk-3.0/bookmarks
 
 # Install SNAP apps
 # source ./snap-install.sh
