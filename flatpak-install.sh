@@ -6,6 +6,7 @@ flatpak install flathub \
   io.dbeaver.DBeaverCommunity \
   com.visualstudio.code \
   org.inkscape.Inkscape \
-  org.kde.krita
+  org.kde.krita \
+  com.slack.Slack
 
 echo -e "\n[+] Flatpaks installed\n"
