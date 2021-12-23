@@ -1,12 +1,19 @@
 # Bash scripts and other useful Linux stuff
 
-## To import the bash functions
+## After install scripts
+
+- `cd` to this repo directory
+- run `./init.sh`
+- after installing the gnome extensions, run `./dash-to-dock.sh`
+
+## Guides, snippets, tips, tricks, troubleshooting
+
+These docs have been moved to [Confluence](https://pkin.atlassian.net/wiki/spaces/PETI/pages/557057/Linux)
+
+## Importing functions to the shell
 
 To import functions to be used in shell, add these lines to the `~/.bashrc` file:
 
-`source ~/path/to/my-scripts.sh`
-
-## Guides, snippets, tips, tricks, troubleshooting
-- [Bash settings](docs/bash-settings.md)
-- [Tips and tricks](docs/tips-and-tricks.md)
-- [Troubleshooting](docs/troubleshooting.md)
+```bash
+source ~/path/to/my-scripts.sh
+```

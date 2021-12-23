@@ -40,11 +40,3 @@ function git-pulo {
   git pull origin $branch
   return 0
 }
-
-function mcda-review {
-  git-review $1
-  echo -e "\n\e[32m[+] Running automated tests...\n\e[39m"
-  npm run test
-  echo -e "\n\e[32m[+] Running linters...\n\e[39m"
-  npm run lint
-}

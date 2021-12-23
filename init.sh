@@ -29,6 +29,8 @@ echo -e "\n[+] Custom scripts sourced\n"
 # echo -e "\n--------\n"
 
 # Add bookmarks to Nautilus
+echo "file:///home/peter/code" >> $HOME/.config/gtk-3.0/bookmarks
+echo "file:///home/peter/moon" >> $HOME/.config/gtk-3.0/bookmarks
 echo "sftp://peter@192.168.0.100/home/peter KP-NUC" >> $HOME/.config/gtk-3.0/bookmarks
 echo "sftp://peter@192.168.0.109/home/peter KP-ZENBOOK" >> $HOME/.config/gtk-3.0/bookmarks
 echo "sftp://peter@192.168.0.112/home/peter KP-BRIX" >> $HOME/.config/gtk-3.0/bookmarks
