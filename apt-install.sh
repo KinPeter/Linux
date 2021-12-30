@@ -3,6 +3,9 @@
 # Add PoP!_OS Wallpapers
 sudo apt-add-repository -ys ppa:system76-dev/stable
 
+# Add Papirus icon theme
+sudo add-apt-repository ppa:papirus/papirus
+
 sudo apt update
 
 # Install APT packages
@@ -23,7 +26,10 @@ sudo apt install \
   openjdk-11-jdk \
   piper \
   bat \
-  system76-wallpapers
+  system76-wallpapers \
+  transmission \
+  papirus-icon-theme \
+  papirus-folders
   # indicator-multiload \
   # terminator \
   # git \

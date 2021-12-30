@@ -7,6 +7,10 @@ source ./apt-install.sh
 source ./gsettings.sh
 echo -e "\n[+] Settings added\n"
 
+# Add custom themes
+source ./themes.sh
+echo -e "\n[+] Themes added\n"
+
 # Copy git and pit config
 cp ./config/.gitconfig $HOME
 cp ./config/.pitconfig.json $HOME
