@@ -17,6 +17,5 @@ gsettings set org.gnome.shell.extensions.dash-to-dock custom-background-color tr
 gsettings set org.gnome.shell.extensions.dash-to-dock background-color "rgb(0,0,0)"
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-
 gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-shrink true
 gsettings set org.gnome.shell.extensions.dash-to-dock hide-delay 0.5
