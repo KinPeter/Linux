@@ -13,6 +13,7 @@ flatpak install flathub \
   org.inkscape.Inkscape \
   org.kde.krita \
   com.slack.Slack \
-  org.videolan.VLC 
+  org.videolan.VLC \
+  com.uploadedlobster.peek
   
 echo -e "\n[+] Flatpaks installed\n"

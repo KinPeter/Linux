@@ -43,3 +43,8 @@ echo "ftp://pkincom@p-kin.com P-Kin.com" >> $HOME/.config/gtk-3.0/bookmarks
 
 # Install Flatpak apps
 source ./flatpak-install.sh
+
+# Make sure suspend also locks the screen
+sudo cp ./config/lock.service /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable lock.service

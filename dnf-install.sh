@@ -3,7 +3,6 @@
 # Install DNF packages
 sudo dnf install \
   flameshot \
-  peek \
   moby-engine \
   docker-compose \
   xl2tpd \

@@ -1,0 +1,10 @@
+[Unit]
+Description="Make extra sure to lock the screen when suspending"
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/bin/loginctl lock-sessions
+
+[Install]
+WantedBy=suspend.target

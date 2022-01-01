@@ -10,7 +10,7 @@ alias pit='node ~/code/pit-cli/dist/index.js'
 alias pyserve='python3 -m http.server 8000' 
 
 # replace default cat with bat(cat) for fancy display
-alias cat='batcat --pager=never'
+alias cat='bat --pager=never'
 # run the original cat with different alias
 alias ccat='/usr/bin/cat'
 
