@@ -4,11 +4,12 @@ list=['fb72f638-2ea0-4308-9296-1fed9c2fd6b2', 'b1dcc9dd-5262-4d8d-a863-c897e6d97
 
 [:fb72f638-2ea0-4308-9296-1fed9c2fd6b2]
 background-color='rgb(23,23,23)'
-background-transparency-percent=1
+background-transparency-percent=5
 default-size-columns=120
 default-size-rows=35
 scrollback-unlimited=true
-use-theme-colors=false
+use-system-font=false
+font='Monospace 12'
 use-theme-transparency=false
 use-transparent-background=true
 visible-name='Peti'
