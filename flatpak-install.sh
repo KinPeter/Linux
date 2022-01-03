@@ -14,6 +14,6 @@ flatpak install flathub \
   org.kde.krita \
   com.slack.Slack \
   org.videolan.VLC \
-  com.uploadedlobster.peek
+  io.github.seadve.Kooha
   
 echo -e "\n[+] Flatpaks installed\n"
