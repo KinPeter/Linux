@@ -26,3 +26,6 @@ alias nvpnusa="sudo nordvpn c United_States"
 alias nvpnhun="sudo nordvpn c Hungary"
 alias nvpnd="sudo nordvpn d"
 alias nvpnst="sudo nordvpn status"
+
+# Home folder backup script
+alias home-backup='~/code/linux/backup.sh'
