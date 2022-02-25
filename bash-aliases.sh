@@ -29,3 +29,8 @@ alias nvpnst="sudo nordvpn status"
 
 # Home folder backup script
 alias home-backup='~/code/linux/backup.sh'
+
+# Switch mouse profiles (Piper)
+alias mouse-0='ratbagctl hollering-marmot profile active set 0'
+alias mouse-1='ratbagctl hollering-marmot profile active set 1'
+# Device name might change, check with `ratbagctl list`
