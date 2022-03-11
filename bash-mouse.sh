@@ -5,7 +5,9 @@ g502mouseName=""
 function mpr {
   local profile=$1
 
-  if [[ $profile == "solo" ]]; then
+  if [[ $# == 0 ]]; then
+    mpr-get
+  elif [[ $profile == "solo" ]]; then
     mpr-configureAndSetSolo
   elif [[ $profile == "cp" ]]; then
     mpr-configureAndSetCyberpunk
@@ -40,9 +42,12 @@ function mpr-set {
 function mpr-get {
   getMyMouseName
   local profile=$(ratbagctl $g502mouseName profile active get)
-  echo "G502 active profile is $profile"
-  if [[ $1 == "-i" ]]; then
-    ratbagctl $g502mouseName profile $profile get
+  local game=$(<$HOME/.g502gameprofile)
+  if [[ $profile == 0 ]]; then
+    echo "G502 active profile is $profile (Default)"
+    echo "Profile 1 is set to $game"
+  else
+    echo "G502 active profile is set to $game"
   fi
 }
 
@@ -101,6 +106,7 @@ function mpr-configureAndSetSolo {
     ratbagctl $g502mouseName profile 1 button $i action set ${g502ProfileSolo[$i]}
   done
   echo "Profile 1 buttons configured"
+  echo "Swords of Legends Online" > $HOME/.g502gameprofile
   mpr-set 1
   echo "Game: Swords of Legends Online"
 }
@@ -125,6 +131,7 @@ function mpr-configureAndSetCyberpunk {
     ratbagctl $g502mouseName profile 1 button $i action set ${g502ProfileCyberpunk[$i]}
   done
   echo "Profile 1 buttons configured"
+  echo "Cyberpunk 2077" > $HOME/.g502gameprofile
   mpr-set 1
   echo "Game: Cyberpunk 2077"
 }
