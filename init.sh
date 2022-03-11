@@ -21,6 +21,7 @@ cat ./config/bash-prompt >> $HOME/.bashrc
 # Source custom bash scripts
 echo "source $(pwd)/bash-aliases.sh" >> $HOME/.bashrc
 echo "source $(pwd)/bash-git.sh" >> $HOME/.bashrc
+echo "source $(pwd)/bash-mouse.sh" >> $HOME/.bashrc
 echo "source $(pwd)/bash-others.sh" >> $HOME/.bashrc
 echo -e "\n[+] Custom scripts sourced\n"
 
