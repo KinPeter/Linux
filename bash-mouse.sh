@@ -34,8 +34,12 @@ function mpr-set {
 
   getMyMouseName
   ratbagctl $g502mouseName profile active set $profile
-  echo "G502 Profile set to $profile"
-
+  if [[ $profile == 0 ]]; then 
+    echo "G502 Profile set to $profile (Default)"
+  else
+    local game=$(<$HOME/.g502gameprofile)
+    echo "G502 Profile set to $profile ($game)"
+  fi
   return 0
 }
 
@@ -108,7 +112,6 @@ function mpr-configureAndSetSolo {
   echo "Profile 1 buttons configured"
   echo "Swords of Legends Online" > $HOME/.g502gameprofile
   mpr-set 1
-  echo "Game: Swords of Legends Online"
 }
 
 g502ProfileCyberpunk=(
@@ -133,5 +136,4 @@ function mpr-configureAndSetCyberpunk {
   echo "Profile 1 buttons configured"
   echo "Cyberpunk 2077" > $HOME/.g502gameprofile
   mpr-set 1
-  echo "Game: Cyberpunk 2077"
 }
