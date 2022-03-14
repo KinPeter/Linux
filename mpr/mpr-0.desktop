@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Mpr 0
+Icon=/home/peter/.local/share/icons/g.svg
+Comment="Set mouse profile to 0"
+Exec=/home/peter/.mpr/mpr-0.sh
+Type=Application
+Categories=Utilities;
+Keywords=mpr0
+Terminal=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Mpr SOLO
+Icon=/home/peter/.local/share/icons/g.svg
+Comment="Configure mouse profile for game SOLO"
+Exec=/home/peter/.mpr/mpr-solo.sh
+Type=Application
+Categories=Utilities;
+Keywords=mprsolo
+Terminal=false

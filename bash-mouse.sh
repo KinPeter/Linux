@@ -96,10 +96,10 @@ g502ProfileSolo=(
   "button 3"
   "macro +KEY_LEFTALT KEY_X -KEY_LEFTALT"
   "macro +KEY_LEFTALT KEY_Q -KEY_LEFTALT"
-  "button 4"
+  "macro KEY_7"
   "macro +KEY_LEFTALT KEY_E -KEY_LEFTALT"
   "macro +KEY_LEFTALT KEY_R -KEY_LEFTALT"
-  "button 3"
+  "macro KEY_8"
   "macro KEY_Z"
   "macro KEY_R"
 )

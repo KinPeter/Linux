@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Mpr Cyberpunk 2077
+Icon=/home/peter/.local/share/icons/g.svg
+Comment="Configure mouse profile for game Cyberpunk 2077"
+Exec=/home/peter/.mpr/mpr-cp.sh
+Type=Application
+Categories=Utilities;
+Keywords=mprcp
+Terminal=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Mpr
+Icon=/home/peter/.local/share/icons/g.svg
+Comment="Get mouse profile"
+Exec=/home/peter/.mpr/mpr.sh
+Type=Application
+Categories=Utilities;
+Keywords=mprget
+Terminal=false
