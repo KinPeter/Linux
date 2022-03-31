@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Mpr GW2
+Icon=/home/peter/.local/share/icons/g.svg
+Comment="Configure mouse profile for game GW2"
+Exec=/home/peter/.mpr/mpr-gw.sh
+Type=Application
+Categories=Utilities;
+Keywords=mprgw
+Terminal=false

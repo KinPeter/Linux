@@ -11,6 +11,8 @@ function mpr {
     mpr-configureAndSetSolo
   elif [[ $profile == "cp" ]]; then
     mpr-configureAndSetCyberpunk
+  elif [[ $profile == "gw" ]]; then
+    mpr-configureAndSetGuildWars2
   else 
     mpr-set $profile
   fi
@@ -135,5 +137,29 @@ function mpr-configureAndSetCyberpunk {
   done
   echo "Profile 1 buttons configured"
   echo "Cyberpunk 2077" > $HOME/.g502gameprofile
+  mpr-set 1
+}
+
+g502ProfileGuildWars2=(
+  "button 1"  
+  "button 2"
+  "button 3"
+  "macro KEY_NUMLOCK"
+  "macro KEY_M"
+  "macro +KEY_LEFTSHIFT KEY_F -KEY_LEFTSHIFT"
+  "macro KEY_6"
+  "macro KEY_7"
+  "macro +KEY_LEFTSHIFT KEY_F -KEY_LEFTSHIFT"
+  "macro KEY_9"
+  "macro KEY_8"
+)
+function mpr-configureAndSetGuildWars2 {
+  getMyMouseName
+  for i in ${!g502ProfileGuildWars2[@]};
+  do
+    ratbagctl $g502mouseName profile 1 button $i action set ${g502ProfileGuildWars2[$i]}
+  done
+  echo "Profile 1 buttons configured"
+  echo "GuildWars 2" > $HOME/.g502gameprofile
   mpr-set 1
 }
