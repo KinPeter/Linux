@@ -15,13 +15,13 @@ function mpr {
     mpr-configureAndSetGuildWars2
   elif [[ $profile == "swb" ]]; then
     mpr-configureAndSetSWBattlefront2
-  else 
+  else
     mpr-set $profile
   fi
 }
 
 function getMyMouseName {
-  local listItem=$(ratbagctl list | grep 'G502')  
+  local listItem=$(ratbagctl list | grep 'G502')
   IFS=':'
   read -a mouseName <<< "$listItem"
   unset IFS
@@ -38,7 +38,7 @@ function mpr-set {
 
   getMyMouseName
   ratbagctl $g502mouseName profile active set $profile
-  if [[ $profile == 0 ]]; then 
+  if [[ $profile == 0 ]]; then
     echo "G502 Profile set to $profile (Default)"
   else
     local game=$(<$HOME/.g502gameprofile)
@@ -60,9 +60,9 @@ function mpr-get {
 }
 
 # Buttons on the G502
-# 0 left 
+# 0 left
 # 1 right
-# 2 middle 
+# 2 middle
 # 3 left side closest
 # 4 left side second
 # 5 left side far-down
@@ -72,16 +72,16 @@ function mpr-get {
 # 9 wheel right
 # 10 wheel left
 
-g502defaultProfile=( 
-  "button 1"  
+g502defaultProfile=(
+  "button 1"
   "button 2"
   "button 3"
   "button 4"
   "macro +KEY_LEFTMETA KEY_A -KEY_LEFTMETA"
   "macro +KEY_LEFTCTRL KEY_S -KEY_LEFTCTRL"
-  "macro +KEY_LEFTCTRL KEY_C -KEY_LEFTCTRL" 
+  "macro +KEY_LEFTCTRL KEY_C -KEY_LEFTCTRL"
   "macro +KEY_LEFTCTRL KEY_V -KEY_LEFTCTRL"
-  "macro +KEY_LEFTALT KEY_F2 -KEY_LEFTALT" 
+  "macro +KEY_LEFTALT KEY_F2 -KEY_LEFTALT"
   "macro +KEY_LEFTCTRL +KEY_LEFTMETA KEY_RIGHT -KEY_LEFTMETA -KEY_LEFTCTRL"
   "macro +KEY_LEFTCTRL +KEY_LEFTMETA KEY_LEFT -KEY_LEFTMETA -KEY_LEFTCTRL"
 )
@@ -95,7 +95,7 @@ function mpr-resetDefault {
 }
 
 g502ProfileSolo=(
-  "button 1"  
+  "button 1"
   "button 2"
   "button 3"
   "macro +KEY_LEFTALT KEY_X -KEY_LEFTALT"
@@ -119,17 +119,17 @@ function mpr-configureAndSetSolo {
 }
 
 g502ProfileCyberpunk=(
-  "button 1"  
+  "button 1"
   "button 2"
   "button 3"
   "macro KEY_C"
+  "macro KEY_M"
   "macro KEY_F"
-  "macro +KEY_LEFTCTRL KEY_S -KEY_LEFTCTRL"
   "button 3"
   "macro KEY_X"
   "button 3"
-  "button 9"
-  "button 10"
+  "macro KEY_CAPSLOCK"
+  "macro KEY_CAPSLOCK"
 )
 function mpr-configureAndSetCyberpunk {
   getMyMouseName
@@ -143,7 +143,7 @@ function mpr-configureAndSetCyberpunk {
 }
 
 g502ProfileGuildWars2=(
-  "button 1"  
+  "button 1"
   "button 2"
   "button 3"
   "macro KEY_NUMLOCK"
@@ -166,16 +166,16 @@ function mpr-configureAndSetGuildWars2 {
   mpr-set 1
 }
 
-g502ProfileSWBattlefront2=( 
-  "button 1"  
+g502ProfileSWBattlefront2=(
+  "button 1"
   "button 2"
   "button 3"
   "macro KEY_V"
   "macro KEY_R"
   "button 6"
-  "macro KEY_5" 
+  "macro KEY_5"
   "macro KEY_4"
-  "button 9" 
+  "button 9"
   "macro KEY_E"
   "macro KEY_Q"
 )
