@@ -6,6 +6,9 @@ alias docker-rma='docker rm $(docker ps -a -q) && docker rmi $(docker images -a 
 # run pit-cli using node.js (make sure the path is correct and the app is built)
 alias pit='node ~/code/pit-cli/dist/index.js'
 
+# run mouse profile generator using node.js (make sure the path is correct and the app is built)
+alias mpr-generate='node ~/code/mpr/dist/index.js'
+
 # run a static http server on port 8000 serving from the active directory
 alias pyserve='python3 -m http.server 8000' 
 
