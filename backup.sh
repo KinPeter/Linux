@@ -16,6 +16,7 @@ tar \
   $HOME/Documents \
   $HOME/Pictures \
   $HOME/.gitconfig \
-  $HOME/.pitconfig.json
+  $HOME/.pitconfig.json \
+  $HOME/.mprconfig.json
 
 echo -e "\n\e[32mBackup complete\n\e[39m"
