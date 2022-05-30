@@ -48,5 +48,6 @@ gsettings set org.gnome.shell disable-extension-version-validation true
 # Set Papirus icon theme and color
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
-# Gedit 
-gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
+# Gedit - removed in Gnome 42
+# gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
+
