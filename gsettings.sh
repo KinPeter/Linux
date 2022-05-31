@@ -48,6 +48,9 @@ gsettings set org.gnome.shell disable-extension-version-validation true
 # Set Papirus icon theme and color
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
+# Show battery percentage in top bar
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 # Gedit - removed in Gnome 42
 # gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
 

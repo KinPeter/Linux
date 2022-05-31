@@ -32,3 +32,6 @@ alias nvpnst="sudo nordvpn status"
 
 # Home folder backup script
 alias home-backup='~/code/linux/backup.sh'
+
+# Make it easier to open the new Gnome Text Editor
+alias gedit='gnome-text-editor'

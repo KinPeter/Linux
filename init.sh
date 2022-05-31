@@ -7,6 +7,11 @@ source ./dnf-install.sh
 source ./gsettings.sh
 echo -e "\n[+] Settings added\n"
 
+# Install fonts
+mkdir -p ~/.local/share/fonts
+cp ./fonts/*.ttf ~/.local/share/fonts
+fc-cache -v
+
 # Add config for Gnome Terminal
 dconf load /org/gnome/terminal/legacy/profiles:/ < ./config/gnome-terminal-profiles.dconf
 
