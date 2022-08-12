@@ -15,6 +15,10 @@ fc-cache -v
 # Add config for Gnome Terminal
 dconf load /org/gnome/terminal/legacy/profiles:/ < ./config/gnome-terminal-profiles.dconf
 
+# Add config for Tilix
+dconf load /com/gexperts/Tilix/ < ./config/tilix-settings.dconf
+# dump settings: dconf dump /com/gexperts/Tilix/ > ~/tilix-settings.dconf
+
 # Add prompt for Bash
 cat ./config/bash-prompt >> $HOME/.bashrc
 

@@ -1,0 +1,71 @@
+[/]
+enable-wide-handle=true
+sidebar-on-right=false
+terminal-title-style='small'
+theme-variant='dark'
+window-style='normal'
+
+[profiles]
+default='67d835e4-ca05-4caf-8f78-4583f7a078f6'
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d', '67d835e4-ca05-4caf-8f78-4583f7a078f6']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+visible-name='Default'
+
+[profiles/67d835e4-ca05-4caf-8f78-4583f7a078f6]
+allow-bold=true
+automatic-switch=@as []
+background-color='#272822'
+background-transparency-percent=5
+backspace-binding='ascii-delete'
+badge-color='#ffffff'
+badge-color-set=false
+badge-font='Monospace 12'
+badge-position='northeast'
+badge-text=''
+badge-use-system-font=true
+bold-color='#ffffff'
+bold-color-set=false
+bold-is-bright=true
+cell-height-scale=1.0
+cell-width-scale=1.0
+cjk-utf8-ambiguous-width='narrow'
+cursor-background-color='#000000'
+cursor-blink-mode='system'
+cursor-colors-set=false
+cursor-foreground-color='#ffffff'
+cursor-shape='block'
+custom-command=''
+custom-hyperlinks=@as []
+default-size-columns=120
+default-size-rows=35
+delete-binding='delete-sequence'
+dim-transparency-percent=38
+draw-margin=80
+encoding='UTF-8'
+exit-action='close'
+font='Ubuntu Mono 13'
+foreground-color='#F8F8F2'
+highlight-background-color='#000000'
+highlight-colors-set=false
+highlight-foreground-color='#ffffff'
+login-shell=false
+notify-silence-enabled=false
+notify-silence-threshold=0
+palette=['#000000', '#AA0000', '#00AA00', '#AA5400', '#0000AA', '#AA00AA', '#00AAAA', '#AAAAAA', '#545454', '#FF5454', '#54FF54', '#FFFF54', '#5454FF', '#FF54FF', '#54FFFF', '#FFFFFF']
+rewrap-on-resize=true
+scroll-on-keystroke=true
+scroll-on-output=false
+scrollback-lines=8192
+scrollback-unlimited=true
+select-by-word-chars='-,./?%&#:_'
+shortcut='disabled'
+show-scrollbar=true
+terminal-bell='sound'
+terminal-title='${id}: ${title}'
+text-blink-mode='always'
+triggers=@as []
+use-custom-command=false
+use-system-font=false
+use-theme-colors=true
+visible-name='Peti'

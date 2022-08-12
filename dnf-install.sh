@@ -28,6 +28,7 @@ sudo dnf install \
   piper \
   bat \
   transmission \
+  tilix \
   papirus-icon-theme 
   # papirus-folders
 
