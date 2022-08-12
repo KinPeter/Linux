@@ -35,3 +35,6 @@ alias home-backup='~/code/linux/backup.sh'
 
 # Make it easier to open the new Gnome Text Editor
 alias gedit='gnome-text-editor'
+
+# Add VSCode flatpak
+alias code="flatpak run com.visualstudio.code"
