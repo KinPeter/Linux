@@ -1,6 +1,7 @@
 [/]
 enable-wide-handle=true
 sidebar-on-right=false
+terminal-title-show-when-single=false
 terminal-title-style='small'
 theme-variant='dark'
 window-style='normal'
@@ -26,7 +27,7 @@ badge-text=''
 badge-use-system-font=true
 bold-color='#ffffff'
 bold-color-set=false
-bold-is-bright=true
+bold-is-bright=false
 cell-height-scale=1.0
 cell-width-scale=1.0
 cjk-utf8-ambiguous-width='narrow'
@@ -52,7 +53,7 @@ highlight-foreground-color='#ffffff'
 login-shell=false
 notify-silence-enabled=false
 notify-silence-threshold=0
-palette=['#000000', '#AA0000', '#00AA00', '#AA5400', '#0000AA', '#AA00AA', '#00AAAA', '#AAAAAA', '#545454', '#FF5454', '#54FF54', '#FFFF54', '#5454FF', '#FF54FF', '#54FFFF', '#FFFFFF']
+palette=['#171714142121', '#C0C01C1C2828', '#2626A2A26868', '#A2A273734B4B', '#111147478B8B', '#A2A24646BABA', '#2929A1A1B3B3', '#D0D0CFCFCCCC', '#5E5E5C5C6464', '#F6F661615151', '#3333DADA7979', '#E9E9ACAC0B0B', '#29297B7BDEDE', '#C0C06060CBCB', '#3232C6C6DEDE', '#FFFFFFFFFFFF']
 rewrap-on-resize=true
 scroll-on-keystroke=true
 scroll-on-output=false
