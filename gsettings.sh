@@ -32,6 +32,8 @@ gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 gsettings set org.gnome.nautilus.list-view use-tree-view true
 gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'permissions', 'date_modified']"
 gsettings set org.gnome.nautilus.list-view default-zoom-level "standard"
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+
 
 # Screen lock & suspend
 # Screen off in 10 minutes, lock and suspend after 20
