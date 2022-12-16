@@ -8,11 +8,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 # Install Flatpaks
 flatpak install flathub \
   io.dbeaver.DBeaverCommunity \
-  com.visualstudio.code \
   org.inkscape.Inkscape \
   org.gimp.GIMP \
   com.slack.Slack \
   org.videolan.VLC 
+  # com.visualstudio.code \
   # io.github.seadve.Kooha
   
 echo -e "\n[+] Flatpaks installed\n"

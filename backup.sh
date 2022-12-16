@@ -10,7 +10,6 @@ tar \
   --exclude out \
   --exclude .nuxt \
   --exclude .next \
-  $HOME/moon \
   $HOME/code \
   $HOME/.ssh \
   $HOME/Documents \
