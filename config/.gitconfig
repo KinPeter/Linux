@@ -4,7 +4,7 @@
 [core]
 	editor = nano
 [pull]
-  rebase = false
+	rebase = false
 [alias]
 	alias = config --get-regexp alias
 	localuser = config user.email
@@ -17,6 +17,7 @@
 	poh = push origin HEAD
 	pohf = push origin HEAD --force
 	pohfwl = push origin HEAD --force-with-lease
+	pot = push origin --tags
 	cm = commit -m
 	cam = commit --amend -m
 	cnv = commit --no-verify
