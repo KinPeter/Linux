@@ -10,12 +10,12 @@ tar \
   --exclude out \
   --exclude .nuxt \
   --exclude .next \
+  --exclude .pytest_cache \
+  --exclude .venv \
   $HOME/code \
   $HOME/.ssh \
-  $HOME/Documents \
-  $HOME/Pictures \
+  $HOME/.bashrc \
   $HOME/.gitconfig \
-  $HOME/.pitconfig.json \
-  $HOME/.mprconfig.json
+  $HOME/.pitconfig.json 
 
 echo -e "\n\e[32mBackup complete\n\e[39m"

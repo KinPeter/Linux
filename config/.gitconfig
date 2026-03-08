@@ -5,6 +5,8 @@
 	editor = nano
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main
 [alias]
 	alias = config --get-regexp alias
 	localuser = config user.email
